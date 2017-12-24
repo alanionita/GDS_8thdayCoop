@@ -35,13 +35,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.8"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.9"
+            android:layout_weight="1"
             android:contentDescription="office shot"
             android:scaleType="centerCrop"
             android:src="@drawable/udacity_office" />
@@ -53,20 +53,24 @@
 
             <TextView
                 android:id="@+id/address"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/address"
-                android:textSize="14sp"
+                android:textSize="12sp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
+                android:layout_below="@id/address"
+                android:layout_marginTop="16dp"
                 android:layout_marginLeft="16dp"
-                android:text="Directions"
-                android:textSize="14sp"/>
+                android:layout_marginBottom="16dp"
+                android:text="Get directions"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                />
         </RelativeLayout>
     </LinearLayout>
 
@@ -75,6 +79,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:contentDescription="map"
-        android:src="@mipmap/ic_launcher" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/map" />
 
 </LinearLayout>
