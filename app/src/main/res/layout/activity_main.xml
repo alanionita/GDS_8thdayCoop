@@ -11,56 +11,62 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.2"
+        android:layout_gravity="center"
 
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="0dp"
-        android:layout_gravity="center"
-        android:src="@drawable/udacity_logo"/>
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/udacity_logo" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_weight="0.5"
         android:layout_height="0dp"
-        android:text="@string/header_text"
         android:layout_margin="16dp"
+        android:layout_weight="0.5"
+        android:breakStrategy="high_quality"
+        android:gravity="center_horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:textSize="16sp"
-        android:gravity="center_horizontal"
-        android:breakStrategy="high_quality"/>
+        android:text="@string/header_text"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.9"
             android:contentDescription="office shot"
-            android:src="@mipmap/ic_launcher_round"
-            />
+            android:scaleType="centerCrop"
+            android:src="@drawable/udacity_office" />
+
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
+
             <TextView
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="Address"
-                android:id="@+id/address"
-                />
+                android:text="@string/address"
+                android:textSize="14sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16dp"
                 android:text="Directions"
-                />
+                android:textSize="14sp"/>
         </RelativeLayout>
     </LinearLayout>
 
@@ -68,8 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:src="@mipmap/ic_launcher"
         android:contentDescription="map"
-        />
+        android:src="@mipmap/ic_launcher" />
 
 </LinearLayout>
