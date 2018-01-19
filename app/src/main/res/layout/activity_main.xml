@@ -15,9 +15,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
-        android:layout_weight="0.2"
+        android:layout_weight="0.3"
         android:src="@drawable/udacity_logo"
         android:contentDescription="@string/image_logo"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/image_map"
+        android:scaleType="fitCenter"
+        android:src="@drawable/undraw_welcome_3gvl" />
 
     <TextView
         android:layout_width="match_parent"
@@ -35,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.8"
+
         android:orientation="horizontal">
 
         <ImageView
@@ -43,12 +52,14 @@
             android:layout_weight="1"
             android:contentDescription="@string/image_office"
             android:scaleType="centerCrop"
-            android:src="@drawable/udacity_office" />
+            android:src="@drawable/map"
+            />
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            >
 
             <TextView
                 android:id="@+id/address"
@@ -57,7 +68,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:text="@string/address"
-                android:textSize="12sp" />
+                android:textSize="13sp" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -71,13 +82,5 @@
                 android:textAllCaps="false" />
         </RelativeLayout>
     </LinearLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/image_map"
-        android:scaleType="centerCrop"
-        android:src="@drawable/map" />
 
 </LinearLayout>
