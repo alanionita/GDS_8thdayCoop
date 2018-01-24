@@ -1,86 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical"
-    tools:context="com.example.android.helloandroid.MainActivity">
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.android.helloandroid.MainActivity"
+    android:fillViewport="true">
 
-    <ImageView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_weight="0.3"
-        android:src="@drawable/udacity_logo"
-        android:contentDescription="@string/image_logo"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.helloandroid.MainActivity"
+        android:padding="15dp">
 
-    <ImageView
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/image_map"
-        android:scaleType="fitCenter"
-        android:src="@drawable/undraw_welcome_3gvl" />
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        android:background="#ffffff"
+        android:layout_margin="10dp"
+        >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:layout_weight="0.5"
-        android:breakStrategy="high_quality"
-        android:gravity="center_horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:text="@string/header_text"
-        android:textSize="16sp" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.example.android.helloandroid.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8"
-
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:contentDescription="@string/image_office"
-            android:scaleType="centerCrop"
-            android:src="@drawable/map"
-            />
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            >
-
-            <TextView
-                android:id="@+id/address"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="@string/address"
-                android:textSize="13sp" />
+                android:layout_marginTop="16dp"
+                android:src="@drawable/udacity_logo"
+                android:contentDescription="@string/image_logo"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/image_map"
+                android:scaleType="fitCenter"
+                android:src="@drawable/undraw_welcome_3gvl" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:breakStrategy="high_quality"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/header_text"
+                android:textSize="18sp" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/address"
-                android:layout_marginBottom="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif"
-                android:text="Get directions"
-                android:textAllCaps="false" />
-        </RelativeLayout>
-    </LinearLayout>
+                android:layout_marginBottom="20dp"
+                android:text="Hello!"
+                android:layout_gravity="center_horizontal"/>
 
-</LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/address"
+                android:textSize="13sp"
+                android:layout_margin="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/image_office"
+                android:scaleType="centerCrop"
+                android:src="@drawable/map" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
