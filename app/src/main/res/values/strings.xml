@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
-    <string name="header_text">At Udacity, we believe in the power of learning to uplift, empower, and transform.\n\nSay hello! 👋</string>
-    <string name="address">Udacity\n2465 Latham St\nMountain View, CA 94043\n650&#8211;555&#8211;5555\ncontact@udacity.com</string>
-    <string name="image_office">Photo of two people sitting in the Udacity office</string>
+    <string name="header_text">At Udacity, we believe in the power of learning to uplift, empower, and transform.</string>
+    <string name="button_text">Say hello! 👋</string>
+    <string name="address_icon">Address: </string>
+    <string name="address_content">Udacity, 2465 Latham St\nMountain View, CA 94043</string>
+    <string name="telephone_icon">Phone: </string>
+    <string name="telephone_content">650&#8211;555&#8211;5555</string>
+    <string name="email_icon">Email: </string>
+    <string name="email_content">contact@udacity.com</string>
+    <string name="header_gliph">A gliph of a person opening some blinds</string>
     <string name="image_map">Google Map image of the Udacity location and surroundings</string>
     <string name="image_logo">Udacity logo</string>
 </resources>
