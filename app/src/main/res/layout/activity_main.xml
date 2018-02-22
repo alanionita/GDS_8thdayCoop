@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryLight"
         card_view:cardBackgroundColor="@color/colorAccent"
-        card_view:cardCornerRadius="@dimen/corner_radius">
+        card_view:cardCornerRadius="@dimen/header_card_corner_radius">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,26 +28,24 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_location_on_black_24dp_copy"/>
+                    android:layout_width="@dimen/logo_size"
+                    android:layout_height="@dimen/logo_size"
+                    android:src="@drawable/logo"
+                    android:paddingRight="@dimen/app_edge_padding"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8th Day coop"
-                    android:textSize="32dp"
-                    android:textColor="@color/colorPrimaryTextLight"/>
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/font_size_card_lead"
+                    android:textColor="@color/colorPrimaryTextLight"
+                    android:layout_gravity="center"/>
 
             </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Manchester's favourite vegan and vegetarian co-operative and caffe!"
-                android:textSize="18dp"
-                android:textColor="@color/colorPrimaryTextLight"/>
+
         </LinearLayout>
 
 

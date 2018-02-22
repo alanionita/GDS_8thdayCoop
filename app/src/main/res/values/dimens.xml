@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Spacing-->
     <dimen name="fab_margin">32dp</dimen>
     <dimen name="app_edge_padding">8dp</dimen>
-    <dimen name="header_logo_height">60dp</dimen>
-    <dimen name="corner_radius">0dp</dimen>
     <dimen name="margin_standard">20dp</dimen>
     <dimen name="margin_low">10dp</dimen>
+
+    <!--Sizing-->
+    <dimen name="header_logo_height">60dp</dimen>
     <dimen name="image_size_standard">200dp</dimen>
+    <dimen name="logo_size">80dp</dimen>
     <dimen name="icons_size_standard">20dp</dimen>
     <dimen name="button_width">160dp</dimen>
-    <dimen name="font_size_standard">18sp</dimen>
+
+    <!--Transform-->
+    <dimen name="header_card_corner_radius">0dp</dimen>
+    <dimen name="regular_card_corner_radius">5dp</dimen>
+
+    <!--Fonts-->
+    <dimen name="font_size_standard">20sp</dimen>
+    <dimen name="font_size_standard_header">24sp</dimen>
+    <dimen name="font_size_card_lead">34sp</dimen>
 </resources>

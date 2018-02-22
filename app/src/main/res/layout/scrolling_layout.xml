@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_low"
                 card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
-                card_view:cardCornerRadius="@dimen/corner_radius">
+                card_view:cardCornerRadius="@dimen/regular_card_corner_radius">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -28,63 +28,19 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="26dp"
-                        android:text="Welcome to the Eighth Day Co-op"
-                        android:textColor="@color/colorPrimaryText"/>
+                        android:textSize="@dimen/font_size_standard_header"
+                        android:text="@string/description_header"
+                        android:textColor="@color/colorPrimaryText"
+                        android:fontFamily="sans-serif-regular"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Welcome to 8th Day Co-operative, located in the university area of Manchester our worker’s co-operative has been providing the people of Manchester with great food and products since the 1970’s.
-
-                    In our Health-food shop, you will find the largest selection veggie, vegan, organic food and Fairtrade food in the North-west. We also sell a broad range of nutritional and herbal supplements, cruelty free, natural and organic cosmetics, eco-friendly cleaning products, vegetarian and vegan alcohol and so much more.
-
-                    Our basement cafe creates fresh, wholesome and exciting vegetarian meals and vegan meals, perfect for hearty, healthy eating or you can pop in for an afternoon pick-me-up of fairly traded and organic coffee and locally made vegan cake.  In addition, we host and run events and offer space for local groups to meet. Browse through our site to find out more about a Manchester institution..."
-                        android:textSize="18dp"
-                        android:textColor="@color/colorSecondaryText"/>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_low"
-                card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
-                card_view:cardCornerRadius="@dimen/corner_radius">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Opening Hours"
+                        android:text="@string/description_body"
                         android:textSize="@dimen/font_size_standard"
-                        android:textColor="@color/colorPrimaryText"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Cafe
-                        Mon-Fri 9am – 7pm
-                        Sat 10am – 5pm
-                        Sun Closed
-                        Bank Holidays Closed"
+                        android:fontFamily="sans-serif-light"
                         android:textColor="@color/colorSecondaryText"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Shop
-                        Mon Tue Fri 9am – 5:30pm
-                        Sat 9:30 – 5:30pm
-                        Wed and Thu 9am – 7pm
-                        Sun Closed
-                        Bank Holidays Closed"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -94,7 +50,45 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_low"
                 card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
-                card_view:cardCornerRadius="@dimen/corner_radius">
+                card_view:cardCornerRadius="@dimen/regular_card_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opening_hours_header"
+                        android:textSize="@dimen/font_size_standard_header"
+                        android:textColor="@color/colorPrimaryText"
+                        android:fontFamily="sans-serif-regular"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cafe_opening_hours"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/font_size_standard"
+                        android:fontFamily="sans-serif-light"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shop_opening_hours"
+                        android:textSize="@dimen/font_size_standard"
+                        android:fontFamily="sans-serif-light"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_low"
+                card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
+                card_view:cardCornerRadius="@dimen/regular_card_corner_radius">
 
                 <LinearLayout
                     android:layout_width="match_parent"
