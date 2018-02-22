@@ -3,7 +3,7 @@
     <dimen name="fab_margin">32dp</dimen>
     <dimen name="app_edge_padding">8dp</dimen>
     <dimen name="header_logo_height">60dp</dimen>
-    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="corner_radius">0dp</dimen>
     <dimen name="margin_standard">20dp</dimen>
     <dimen name="margin_low">10dp</dimen>
     <dimen name="image_size_standard">200dp</dimen>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HelloAndroid</string>
+    <string name="app_name">8thday Coop</string>
     <string name="header_text">At Udacity, we believe in the power of learning to uplift, empower, and transform.\n\nSay hello! 👋\n</string>
     <string name="address_icon">Address: </string>
     <string name="address_content">Udacity, 2465 Latham St\nMountain View, CA 94043</string>
@@ -10,4 +10,8 @@
     <string name="header_gliph">A gliph of a person opening some blinds</string>
     <string name="image_map">Google Map image of the Udacity location and surroundings</string>
     <string name="image_logo">Udacity logo</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

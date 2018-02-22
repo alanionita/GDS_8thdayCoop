@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.example.android.helloandroid.MainActivity">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_low"
+                card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
+                card_view:cardCornerRadius="@dimen/corner_radius">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="26dp"
+                        android:text="Welcome to the Eighth Day Co-op"
+                        android:textColor="@color/colorPrimaryText"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome to 8th Day Co-operative, located in the university area of Manchester our worker’s co-operative has been providing the people of Manchester with great food and products since the 1970’s.
+
+                    In our Health-food shop, you will find the largest selection veggie, vegan, organic food and Fairtrade food in the North-west. We also sell a broad range of nutritional and herbal supplements, cruelty free, natural and organic cosmetics, eco-friendly cleaning products, vegetarian and vegan alcohol and so much more.
+
+                    Our basement cafe creates fresh, wholesome and exciting vegetarian meals and vegan meals, perfect for hearty, healthy eating or you can pop in for an afternoon pick-me-up of fairly traded and organic coffee and locally made vegan cake.  In addition, we host and run events and offer space for local groups to meet. Browse through our site to find out more about a Manchester institution..."
+                        android:textSize="18dp"
+                        android:textColor="@color/colorSecondaryText"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_low"
+                card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
+                card_view:cardCornerRadius="@dimen/corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Opening Hours"
+                        android:textSize="@dimen/font_size_standard"
+                        android:textColor="@color/colorPrimaryText"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cafe
+                        Mon-Fri 9am – 7pm
+                        Sat 10am – 5pm
+                        Sun Closed
+                        Bank Holidays Closed"
+                        android:textColor="@color/colorSecondaryText"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop
+                        Mon Tue Fri 9am – 5:30pm
+                        Sat 9:30 – 5:30pm
+                        Wed and Thu 9am – 7pm
+                        Sun Closed
+                        Bank Holidays Closed"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_low"
+                card_view:cardBackgroundColor="@color/colorPrimaryTextLight"
+                card_view:cardCornerRadius="@dimen/corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_standard"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_standard"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/address_icon"
+                            android:layout_width="@dimen/icons_size_standard"
+                            android:layout_height="@dimen/icons_size_standard"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/image_map"
+                            android:src="@drawable/ic_location_on_black_24dp_copy" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginRight="@dimen/margin_standard"
+                            android:autoLink="map"
+                            android:text="@string/address_content"
+                            android:textSize="@dimen/font_size_standard" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_standard"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/telephone_icon"
+                            android:layout_width="@dimen/icons_size_standard"
+                            android:layout_height="@dimen/icons_size_standard"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/image_map"
+                            android:src="@drawable/ic_phone_black_24dp_copy" />
+
+                        <TextView
+                            android:id="@+id/telephone_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginRight="@dimen/margin_standard"
+                            android:autoLink="phone"
+                            android:text="@string/telephone_content"
+                            android:textSize="@dimen/font_size_standard" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_standard"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/email_icon"
+                            android:layout_width="@dimen/icons_size_standard"
+                            android:layout_height="@dimen/icons_size_standard"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/image_map"
+                            android:src="@drawable/ic_email_black_24dp_copy" />
+
+                        <TextView
+                            android:id="@+id/email_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_standard"
+                            android:layout_marginRight="@dimen/margin_standard"
+                            android:autoLink="email"
+                            android:text="@string/email_content"
+                            android:textSize="@dimen/font_size_standard" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/map_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/image_size_standard"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:backgroundTintMode="src_over"
+                        android:contentDescription="@string/image_map"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/map" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>

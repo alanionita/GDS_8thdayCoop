@@ -1,196 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.helloandroid.MainActivity">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floating_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_action_message_light"
-        card_view:fabSize="normal"
-        android:backgroundTint="@color/colorButton"
-        android:onClick="messageUs"/>
-
-    <ScrollView
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorDivider"
-        android:fillViewport="true">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        card_view:cardBackgroundColor="@color/colorAccent"
+        card_view:cardCornerRadius="@dimen/corner_radius">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="@dimen/app_edge_padding"
-            tools:context="com.example.android.helloandroid.MainActivity">
+            android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_low"
-                android:background="@color/colorTextIcons"
-                card_view:cardBackgroundColor="@color/colorTextIcons"
-                card_view:cardCornerRadius="@dimen/corner_radius">
+                android:orientation="horizontal">
 
-
-                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_location_on_black_24dp_copy"/>
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:context="com.example.android.helloandroid.MainActivity">
+                    android:text="8th Day coop"
+                    android:textSize="32dp"
+                    android:textColor="@color/colorPrimaryTextLight"/>
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/header_logo_height"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="0dp"
-                        android:layout_marginEnd="@dimen/margin_standard"
-                        android:layout_marginStart="@dimen/margin_standard"
-                        android:layout_marginTop="@dimen/margin_standard"
-                        android:contentDescription="@string/image_logo"
-                        android:src="@drawable/udacity_logo" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/image_size_standard"
-                        android:contentDescription="@string/header_gliph"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/undraw_welcome_3gvl" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_standard"
-                        android:breakStrategy="high_quality"
-                        android:gravity="center_horizontal"
-                        android:text="@string/header_text"
-                        android:textSize="@dimen/font_size_standard" />
-
-
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_low"
-                card_view:cardBackgroundColor="@color/colorTextIcons"
-                card_view:cardCornerRadius="@dimen/corner_radius">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_standard"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_standard"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/address_icon"
-                            android:layout_width="@dimen/icons_size_standard"
-                            android:layout_height="@dimen/icons_size_standard"
-                            android:layout_gravity="center_vertical"
-                            android:contentDescription="@string/image_map"
-                            android:src="@drawable/ic_location_on_black_24dp_copy" />
-
-                        <TextView
-                            android:id="@+id/address"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="@dimen/margin_standard"
-                            android:layout_marginRight="@dimen/margin_standard"
-                            android:autoLink="map"
-                            android:text="@string/address_content"
-                            android:textSize="@dimen/font_size_standard" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_standard"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/telephone_icon"
-                            android:layout_width="@dimen/icons_size_standard"
-                            android:layout_height="@dimen/icons_size_standard"
-                            android:layout_gravity="center_vertical"
-                            android:contentDescription="@string/image_map"
-                            android:src="@drawable/ic_phone_black_24dp_copy" />
-
-                        <TextView
-                            android:id="@+id/telephone_content"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="@dimen/margin_standard"
-                            android:layout_marginRight="@dimen/margin_standard"
-                            android:autoLink="phone"
-                            android:text="@string/telephone_content"
-                            android:textSize="@dimen/font_size_standard" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/margin_standard"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/email_icon"
-                            android:layout_width="@dimen/icons_size_standard"
-                            android:layout_height="@dimen/icons_size_standard"
-                            android:layout_gravity="center_vertical"
-                            android:contentDescription="@string/image_map"
-                            android:src="@drawable/ic_email_black_24dp_copy" />
-
-                        <TextView
-                            android:id="@+id/email_content"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginLeft="@dimen/margin_standard"
-                            android:layout_marginRight="@dimen/margin_standard"
-                            android:autoLink="email"
-                            android:text="@string/email_content"
-                            android:textSize="@dimen/font_size_standard" />
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:id="@+id/map_location"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/image_size_standard"
-                        android:layout_marginTop="@dimen/margin_standard"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:backgroundTintMode="src_over"
-                        android:contentDescription="@string/image_map"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/map" />
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
+                android:text="Manchester's favourite vegan and vegetarian co-operative and caffe!"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryTextLight"/>
         </LinearLayout>
-    </ScrollView>
-</android.support.design.widget.CoordinatorLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_action_message_light"
+            card_view:fabSize="normal" />
+
+        <include layout="@layout/scrolling_layout"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
 
