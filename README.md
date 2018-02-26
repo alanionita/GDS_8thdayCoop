@@ -2,6 +2,8 @@
 
 ## 8thdayCoop
 
+![screencast of the app](http://g.recordit.co/59nYj8FqGT.gif)
+
 A single screen app that displays information about a fictional small business. 
 
 Think along the lines of your favorite coffeeshop, local restaurant, or that gem of a store that sells those rare comic books or records. 
