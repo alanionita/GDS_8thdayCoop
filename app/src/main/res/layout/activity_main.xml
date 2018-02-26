@@ -63,7 +63,8 @@
             android:layout_margin="@dimen/fab_margin"
             android:backgroundTint="@color/colorPrimaryDark"
             android:src="@drawable/ic_navigation_icon"
-            card_view:fabSize="normal" />
+            card_view:fabSize="normal"
+            android:onClick="navigateTo"/>
 
         <include layout="@layout/scrolling_layout"/>
 

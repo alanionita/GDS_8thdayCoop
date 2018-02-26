@@ -56,4 +56,14 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     protected YouTubePlayer.Provider getYouTubePlayerProvider() {
         return youTubeView;
     }
+
+    public void navigateTo(View view) {
+        Uri gmmIntentUri = Uri.parse("google.navigation:q=The+Eighth+Day+Cafe,+Manchester+UK");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
+        if (mapIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(mapIntent);
+        }
+    }
 }
