@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryLight"
-        card_view:cardBackgroundColor="@color/colorAccent"
+        card_view:cardBackgroundColor="@color/colorPrimary"
         card_view:cardCornerRadius="@dimen/header_card_corner_radius">
 
         <LinearLayout
@@ -35,6 +35,7 @@
                     android:layout_width="@dimen/logo_size"
                     android:layout_height="@dimen/logo_size"
                     android:src="@drawable/logo"
+                    android:contentDescription="@string/logo_image_desc"
                     android:paddingRight="@dimen/app_edge_padding"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -43,7 +44,6 @@
                     android:textSize="@dimen/font_size_card_lead"
                     android:textColor="@color/colorPrimaryTextLight"
                     android:layout_gravity="center"/>
-
             </LinearLayout>
 
         </LinearLayout>
@@ -61,8 +61,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            android:backgroundTint="@color/colorPrimary"
-            android:src="@drawable/ic_action_message_light"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_navigation_icon"
             card_view:fabSize="normal" />
 
         <include layout="@layout/scrolling_layout"/>

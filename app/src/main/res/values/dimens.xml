@@ -9,7 +9,7 @@
     <!--Sizing-->
     <dimen name="header_logo_height">60dp</dimen>
     <dimen name="image_size_standard">200dp</dimen>
-    <dimen name="logo_size">80dp</dimen>
+    <dimen name="logo_size">60dp</dimen>
     <dimen name="icons_size_standard">20dp</dimen>
     <dimen name="button_width">160dp</dimen>
 
@@ -20,5 +20,5 @@
     <!--Fonts-->
     <dimen name="font_size_standard">20sp</dimen>
     <dimen name="font_size_standard_header">24sp</dimen>
-    <dimen name="font_size_card_lead">34sp</dimen>
+    <dimen name="font_size_card_lead">30sp</dimen>
 </resources>

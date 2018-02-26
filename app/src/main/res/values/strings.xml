@@ -1,29 +1,40 @@
 <resources>
 
-    <string name="header_text">At Udacity, we believe in the power of learning to uplift, empower, and transform.\n\nSay hello! 👋\n</string>
+    <!--Content Descriptions-->
+    <string name="address_icon_desc">Icon for address</string>
+    <string name="telephone_icon_desc">Icon for telephon</string>
+    <string name="email_icon_desc">Icon for email</string>
+    <string name="map_image_desc">Google Map image of the Eight Day Coop location</string>
+    <string name="logo_image_desc">Udacity logo</string>
+
+    <!--Details card-->
     <string name="address_icon">Address: </string>
-    <string name="address_content">Udacity, 2465 Latham St\nMountain View, CA 94043</string>
+    <string name="address_content">111 Oxford Rd, Manchester, M1 7DU, UK</string>
     <string name="telephone_icon">Phone: </string>
-    <string name="telephone_content">650&#8211;555&#8211;5555</string>
+    <string name="telephone_content">0161 273 4878</string>
     <string name="email_icon">Email: </string>
-    <string name="email_content">contact@udacity.com</string>
-    <string name="header_gliph">A gliph of a person opening some blinds</string>
-    <string name="image_map">Google Map image of the Udacity location and surroundings</string>
-    <string name="image_logo">Udacity logo</string>
+    <string name="email_content">mail@eighth-day.co.uk</string>
+
+    <!--Opening hours card-->
+    <string name="opening_hours_header">Opening Hours</string>
+    <string name="cafe_heading">Cafe</string>
+    <string name="cafe_opening_hours">Mon-Fri: 9am – 7pm\nSat: 10am – 5pm\nSun: Closed\nBank Holidays Closed"</string>
+    <string name="shop_heading">Shop</string>
+    <string name="shop_opening_hours">Mon Tue Fri: 9am – 5:30pm\nWed Thu: 9am – 7pm\nSat: 9:30 – 5:30pm\nSun: Closed\nBank Holidays Closed</string>
+
+    <!--Description card-->
+    <string name="description_body">Welcome to our co-operative. Located in the university area of Manchester our worker’s co-operative has been providing the people of Manchester with great food and products since the 1970’s.\n\nIn our Health-food shop, you will find the largest selection veggie, vegan, organic food and Fairtrade food in the North-west. We also sell a broad range of nutritional and herbal supplements, cruelty free, natural and organic cosmetics, eco-friendly cleaning products, vegetarian and vegan alcohol and so much more.\n\nOur basement cafe creates fresh, wholesome and exciting vegetarian meals and vegan meals, perfect for hearty, healthy eating or you can pop in for an afternoon pick-me-up of fairly traded and organic coffee and locally made vegan cake.  In addition, we host and run events and offer space for local groups to meet. Browse through our site to find out more about a Manchester institution.</string>
+    <string name="description_header">Welcome to the Eighth Day Co-op</string>
+
+    <!--Main card-->
+    <string name="app_name">Eighth Day Co-op</string>
     <string name="player_error">Error initializing YouTube player: %s</string>
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
 
-    <!--opening hours card-->
-    <string name="opening_hours_header">Opening Hours</string>
-    <string name="cafe_opening_hours">Cafe\nMon-Fri 9am – 7pm\nSat 10am – 5pm\nSun Closed\nBank Holidays Closed"</string>
-    <string name="shop_opening_hours">Shop\nMon Tue Fri 9am – 5:30pm\nSat 9:30 – 5:30pm\nWed and Thu 9am – 7pm\nSun Closed\nBank Holidays Closed</string>
+    <!--Font Family-->
+    <string name="sans_serif_light">sans-serif-light</string>
+    <string name="sans_serif_regular">sans-serif-regular</string>
 
-    <!--Description card-->
-    <string name="description_body">Welcome to 8th Day Co-operative, located in the university area of Manchester our worker’s co-operative has been providing the people of Manchester with great food and products since the 1970’s.\n\nIn our Health-food shop, you will find the largest selection veggie, vegan, organic food and Fairtrade food in the North-west. We also sell a broad range of nutritional and herbal supplements, cruelty free, natural and organic cosmetics, eco-friendly cleaning products, vegetarian and vegan alcohol and so much more.\n\nOur basement cafe creates fresh, wholesome and exciting vegetarian meals and vegan meals, perfect for hearty, healthy eating or you can pop in for an afternoon pick-me-up of fairly traded and organic coffee and locally made vegan cake.  In addition, we host and run events and offer space for local groups to meet. Browse through our site to find out more about a Manchester institution.</string>
-    <string name="description_header">Welcome to the Eighth Day Co-op</string>
-
-    <!--Main card-->
-    <string name="app_name">Eighth Day Co-op</string>
 </resources>

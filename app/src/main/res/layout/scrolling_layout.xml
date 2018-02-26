@@ -23,6 +23,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_standard"
                     android:orientation="vertical">
 
                     <TextView
@@ -31,14 +32,14 @@
                         android:textSize="@dimen/font_size_standard_header"
                         android:text="@string/description_header"
                         android:textColor="@color/colorPrimaryText"
-                        android:fontFamily="sans-serif-regular"/>
+                        android:fontFamily="@string/sans_serif_regular"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/description_body"
                         android:textSize="@dimen/font_size_standard"
-                        android:fontFamily="sans-serif-light"
+                        android:fontFamily="@string/sans_serif_light"
                         android:textColor="@color/colorSecondaryText"/>
 
                 </LinearLayout>
@@ -55,6 +56,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_standard"
                     android:orientation="vertical">
 
                     <TextView
@@ -63,22 +65,68 @@
                         android:text="@string/opening_hours_header"
                         android:textSize="@dimen/font_size_standard_header"
                         android:textColor="@color/colorPrimaryText"
-                        android:fontFamily="sans-serif-regular"/>
+                        android:fontFamily="@string/sans_serif_regular"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/cafe_opening_hours"
-                        android:textColor="@color/colorSecondaryText"
-                        android:textSize="@dimen/font_size_standard"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_margin="@dimen/margin_standard"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_low"
+                            android:layout_marginRight="@dimen/margin_low"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cafe_heading"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_size_standard_header"
+                            android:fontFamily="@string/sans_serif_regular"/>
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_low"
+                            android:layout_marginRight="@dimen/margin_low"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cafe_opening_hours"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/font_size_standard"
+                            android:fontFamily="@string/sans_serif_light"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/shop_opening_hours"
-                        android:textSize="@dimen/font_size_standard"
-                        android:fontFamily="sans-serif-light"/>
+                        android:layout_margin="@dimen/margin_standard"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_heading"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_low"
+                            android:layout_marginRight="@dimen/margin_low"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/font_size_standard_header"
+                            android:fontFamily="@string/sans_serif_regular"/>
+
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/margin_low"
+                            android:layout_marginRight="@dimen/margin_low"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorSecondaryText"
+                            android:text="@string/shop_opening_hours"
+                            android:textSize="@dimen/font_size_standard"
+                            android:fontFamily="@string/sans_serif_light"/>
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -107,7 +155,7 @@
                             android:layout_width="@dimen/icons_size_standard"
                             android:layout_height="@dimen/icons_size_standard"
                             android:layout_gravity="center_vertical"
-                            android:contentDescription="@string/image_map"
+                            android:contentDescription="@string/address_icon_desc"
                             android:src="@drawable/ic_location_on_black_24dp_copy" />
 
                         <TextView
@@ -119,7 +167,8 @@
                             android:layout_marginRight="@dimen/margin_standard"
                             android:autoLink="map"
                             android:text="@string/address_content"
-                            android:textSize="@dimen/font_size_standard" />
+                            android:textSize="@dimen/font_size_standard"
+                            android:fontFamily="@string/sans_serif_light"/>
 
                     </LinearLayout>
 
@@ -134,7 +183,7 @@
                             android:layout_width="@dimen/icons_size_standard"
                             android:layout_height="@dimen/icons_size_standard"
                             android:layout_gravity="center_vertical"
-                            android:contentDescription="@string/image_map"
+                            android:contentDescription="@string/telephone_icon_desc"
                             android:src="@drawable/ic_phone_black_24dp_copy" />
 
                         <TextView
@@ -146,7 +195,8 @@
                             android:layout_marginRight="@dimen/margin_standard"
                             android:autoLink="phone"
                             android:text="@string/telephone_content"
-                            android:textSize="@dimen/font_size_standard" />
+                            android:textSize="@dimen/font_size_standard"
+                            android:fontFamily="@string/sans_serif_light"/>
 
                     </LinearLayout>
 
@@ -161,7 +211,7 @@
                             android:layout_width="@dimen/icons_size_standard"
                             android:layout_height="@dimen/icons_size_standard"
                             android:layout_gravity="center_vertical"
-                            android:contentDescription="@string/image_map"
+                            android:contentDescription="@string/email_icon_desc"
                             android:src="@drawable/ic_email_black_24dp_copy" />
 
                         <TextView
@@ -173,7 +223,8 @@
                             android:layout_marginRight="@dimen/margin_standard"
                             android:autoLink="email"
                             android:text="@string/email_content"
-                            android:textSize="@dimen/font_size_standard" />
+                            android:textSize="@dimen/font_size_standard"
+                            android:fontFamily="@string/sans_serif_light"/>
 
                     </LinearLayout>
 
@@ -184,7 +235,7 @@
                         android:layout_marginTop="@dimen/margin_standard"
                         android:backgroundTint="@color/colorPrimary"
                         android:backgroundTintMode="src_over"
-                        android:contentDescription="@string/image_map"
+                        android:contentDescription="@string/map_image_desc"
                         android:scaleType="centerCrop"
                         android:src="@drawable/map" />
 
