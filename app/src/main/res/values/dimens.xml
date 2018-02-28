@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!--Spacing-->
     <dimen name="fab_margin">32dp</dimen>
     <dimen name="app_edge_padding">8dp</dimen>
@@ -21,4 +22,5 @@
     <dimen name="font_size_standard">20sp</dimen>
     <dimen name="font_size_standard_header">24sp</dimen>
     <dimen name="font_size_card_lead">30sp</dimen>
+
 </resources>

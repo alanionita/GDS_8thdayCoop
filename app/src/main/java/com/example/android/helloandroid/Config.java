@@ -7,7 +7,6 @@ package com.example.android.helloandroid;
 public final class Config {
 
     private Config() {
-
     }
 
     public static final String YOUTUBE_API_KEY = "AIzaSyAntxk6EPaZP94MACtA55Ld0nAbhG_kOdU";
